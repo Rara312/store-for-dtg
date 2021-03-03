@@ -1,0 +1,25 @@
+body{
+  padding:5px;
+  text-align:center;
+}
+
+nav{
+  background-color:black;
+  color:white;
+  padding:5px;
+  width:100%;
+}
+
+sidebar{
+  background-color:purple;
+  color:white;
+  float:left;
+  width:30%;
+  height:100%;
+}
+
+section{
+  background-color:yellow;
+  width:100%;
+  height:100%;
+}
