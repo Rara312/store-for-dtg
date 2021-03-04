@@ -1,4 +1,4 @@
-/*colours #FB8122(orange) #1D2228(black) #E1E2E2(grey)*/
+/*colours #FB8122(orange) #fb6428(other orange) #1D2228(black) #E1E2E2(grey)*/
 
 body{
   padding:5px;
@@ -39,14 +39,14 @@ footer{
   width:100%;
   height:20%;
 }
-
-.container2{
+/*tidies the tiles*/
+.container{
   padding:5px;
   display:flex;
   flex-wrap:wrap;
   justify-content:space-around;
 }
-
+/*anything to do with the tiles*/
 .tile{
   display:inline-block;
   background-color:white;
@@ -55,10 +55,10 @@ footer{
   margin:10px;
   cursor:pointer;
 }
-
+/*when something hovers over the tile*/
 .tile:hover{
   display:inline-block;
-  background-color:#FB8122;
+  background-color:#fb6428;
   height:146px;
   width:146px;
   margin:2px;
@@ -68,19 +68,9 @@ iframe{
   width:inherit;
   border:none;
 }
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-    color:white;
-    padding: 20px;
-}
-
+/*anything to do with the button*/
 .button{
-  background-color:#1D2228;
+  background-color:#FB8122;
   border: none;
   color: white;
   text-align: center;
@@ -91,7 +81,25 @@ li {
   cursor: pointer;
   padding:15px 32px;
 }
-
+/*whenever something hovers over the button*/
 button:hover{
+  background-color:#fb6428; 
+}
+
+button{
   background-color:#FB8122;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    color:white;
+    padding: 10px;
+}
+
+li:hover{
+  cursor: pointer;
 }
