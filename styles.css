@@ -2,14 +2,17 @@
 
 #box{
   width:auto;
-  padding:20px;
+  padding:15px;
+  
 }
 
 body{
-
+  max-width:1000px;
   text-align:center;
   height:100%;
 }
+
+
 
 nav{
   background-color:#966ACC;
@@ -37,6 +40,8 @@ sidebar{
   height:100%;
 }
 
+
+
 section{
   background-color:#B88BF0;
   width:100%;
@@ -48,6 +53,7 @@ footer{
   color:white;
   width:100%;
   height:20%;
+  display:block;
 }
 /*tidies the tiles*/
 .container{
@@ -64,6 +70,7 @@ footer{
   width:140px;
   margin:10px;
   cursor:pointer;
+  
 }
 /*when something hovers over the tile*/
 .tile:hover{
@@ -125,7 +132,7 @@ button:hover{
 
 button{
   background-color:#B88BF0;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 ul {
@@ -138,6 +145,7 @@ ul {
 
 li {
   float: left;
+  color:white;
 }
 
 li a {
@@ -155,14 +163,16 @@ li a:hover {
 
 ul2{
   list-style: none;
+  
 }
 
 li2{
-  display: inline-block;
-  color:white;
-  padding: 10px;
+    display: inline-block;
+    color: white;
+    padding: 4px
 }
 
 li2:hover{
   cursor:hover;
 }
+
