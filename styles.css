@@ -1,43 +1,47 @@
-body{
+/*welcome to css*/
 
-  background-color:lightgrey;
-  
+/*styles for the body*/
+body{
+  background-color:lightgrey; 
 }
 
+/*styles for the header*/
 header{
   background-color:black;
   color:white;
   padding:10px;
 }
 
+/*styles for the navagation bar*/
 nav{
   background-color:grey;
-  
 }
 
+/*styles for section*/
 Section{
   background-color:orange;
   height:50%;
 }
 
+/*styles for article*/
 article{
   background-color:white;
-  
 }
 
+/*styles for the footer*/
 footer{
   height:20%;
   background-color:#4d4b50;
 }
 
-
+/*styles for the unordered list inside the header*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
 }
+
 
 li {
   float: left;
@@ -137,10 +141,12 @@ li.dropdown {
   text-align: left;
 }
 
+/*hover function*/
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/*centers the tiles whenever you resize the page*/
 .container{
   padding:5px;
   display:flex;
@@ -148,6 +154,7 @@ li.dropdown {
   justify-content:space-around;
 }
 
+/*styles for the product tile*/
 .tile{
   display:inline-block;
   background-color:grey;
@@ -157,12 +164,14 @@ li.dropdown {
   cursor:pointer;
 }
 
+/*hover function*/
 .tile:hover{
   display:inline-block;
   border:solid;
   border-color:black;
 }
 
+/*styles for the product tile*/
 .tile2{
   display:inline-block;
   background-color:grey;
@@ -173,12 +182,14 @@ li.dropdown {
   
 }
 
+/*hover function*/
 .tile2:hover{
   display:inline-block;
   border:solid;
   border-color:black;
 }
 
+/*styles for the sign in reminder*/
 #sign-in-reminder {
     position:absolute;
     z-index: 2;
@@ -194,6 +205,8 @@ li.dropdown {
     font-family: monospace;
     padding: 5px;
 }
+
+/*animation of the sign in reminder*/
 @keyframes dropdown {
     0% {
         top: -50px;
@@ -206,16 +219,20 @@ li.dropdown {
     }
 }
 
+/*when the browser is more than 600px the image won't appear*/
 #nav-button {
   display:none;
   position:absolute;
   border:none;
   
 }
+
+/*image that pops up when you reszie the page*/
 #nav-button>img {
   width:30px;
 }
 
+/*when the screen gets to a certain width the things inside it disapear*/
 @media only screen and (max-width: 600px) {
   .box{
     display:none;
@@ -245,6 +262,7 @@ li.dropdown {
   }
   }
 
+/*the animation of the slideshow*/
 @keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
@@ -257,6 +275,7 @@ li.dropdown {
 100% { left: -400%; }
 }
 
+/*styles for the slider*/
 body { margin: 0; } 
 #slider { overflow: hidden; }
 #slider figure img { width: 20%; float: left; }
@@ -270,4 +289,150 @@ body { margin: 0; }
   animation: 30s slidy infinite; 
 }
 
+* {
+  box-sizing: border-box;
+}
 
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row3 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container3 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn3 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn3:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
