@@ -3,7 +3,10 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://kit.fontawesome.com/c8c02782d6.js" crossorigin="anonymous"></script>
- <header>
+  </head>
+  
+  <body>
+    <header>
       
       <ul>
         <li><a href="index.html">thonk</a></li>
@@ -33,6 +36,7 @@
       <a class="dropbtn" href="all.html">all</a>
       
       </ul>
+    
     </header>
     <nav>
       <ul>
@@ -45,55 +49,81 @@
     </nav>
     
     <article>
-      <div class="container">
+     <div class="row3">
+  <div class="col-75">
+    <div class="container3">
+      <form action="/action_page.php">
       
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://i.etsystatic.com/7972092/r/il/8a3810/1015976531/il_570xN.1015976531_rcvb.jpg" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://www.bedroomfurniturediscounts.com/media/catalog/product/b/b/bbt_6183_black_2_1.jpg" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://ak1.ostkcdn.com/images/products/30932013/Christopher-Modern-and-Contemporary-Wood-Platform-Bed-with-Shelves-492f0fc3-1779-4dd7-be4c-6387ee34723c.jpg" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://images-na.ssl-images-amazon.com/images/I/71ZrTe4DBSL._AC_SL1000_.jpg" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://img.bestdeals.co.nz/products_pictures/300/236/23617_206077_F.jpg" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://cdn11.bigcommerce.com/s-fj5u5hhzyb/images/stencil/original/products/1475/1364/Mocka_Peyton_Bed_2__94085.1590451637.jpg?c=1" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://cdn11.bigcommerce.com/s-fj5u5hhzyb/images/stencil/750x560/products/1799/4720/Mocka_Southport_Bedhead_BlackNatural_1__68766.1605669624.jpg?c=1" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://askowallbeds.co.nz/wp-content/uploads/2019/06/horizontal-beds-category.jpg" style="width:200px;height:200px;"></a>
-      </div>
-      
-      <div class="tile">
-        <a href="bedroom-cart.html"><img src="https://hnsfpau.imgix.net/5/images/detailed/125/Coolmore-Bed-Frame_kqsr-ot.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress" style="width:200px;height:200px;"></a>
-      </div>
-      </div>
+        <div class="row3">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Mike Hawk">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Mike@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Ben Dover 69th Street">
+            
+
+            <div class="row3">
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="77777">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Mike Hawk">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row3">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container3">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+      <p><a href="bedroom.html">Product 1</a> <span class="price">$280</span></p>
+      <p>Total <span class="price" style="color:black"><b>$280</b></span></p>
+    </div>
+  </div>
+</div>
     </article>
-    
-    
     <footer>
       <ul2>
           <li2><a href="index.html">home</a></li2>
           <li2><a href="contact-us.html">contact us</a></li2>
           <li2><a href="#">faq</a></li2>
           <li2><a href="#">something</a></li2>
-      </ul2>
-    </footer>
+      </ul2></footer>
   </body>
   
 </html>
